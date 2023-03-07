@@ -1,0 +1,10 @@
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imgs/IMG_0221.GIF);
+    background-size: cover;
+    background-position: top;
+    opacity: 0.1;
+}
