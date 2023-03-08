@@ -1,0 +1,52 @@
+.figure {
+    display: flex;
+    flex-flow: column;
+    line-height: 0;
+}
+
+.figure__captions {
+    font-size: 18px;
+    align-self: flex-start;
+    line-height: 1;
+    margin: 5px 0px;
+}
+
+.quote {
+    position: relative;
+    margin-top: 20px;
+}
+
+.quote__bubble {
+    top: 0px;
+    position: absolute;
+    max-width: 250px;
+}
+
+.quote__bubble--right{
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.quote__bubble--left {
+    left: 0;
+}
+
+.quote__text { 
+    position: absolute;
+    top: 75px;
+    font-size: 17px;
+    max-width: 190px;
+    line-height: 1.5em;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.quote__text--left {
+    left: 25px;
+}
+
+.quote__text--right {
+    right: 30px;
+    top: 85px
+}

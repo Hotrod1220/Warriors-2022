@@ -1,0 +1,11 @@
+.header {
+    background-color: #26282A;
+    padding: 30px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header h2 {
+    margin: 0;
+}

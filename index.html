@@ -17,58 +17,93 @@
         <!-- Background image opacity change changes the text opacity too -->
         <h1>Fall and Rise <br> of the <br>Golden State Warriors</h1>
     </section>
-    <header>
-        <!-- Sticky header that will show date -->
-        <h2>2019</h2>
-    </header>
     <main>
-        <section>
+        <section class="container wrapper text--yellow">
+            <div class="header">
+                <h2>2019</h2>
+            </div>
             <p>Kevin Durant tears his achilles in the second round of the playoffs.</p>
             <h3>NBA finals, Klay Thompson tears his ACL, Steph Curry is left alone.</h3>
-            <img src="imgs/2019FinalsLoss.png" alt="Curry Shocked After Klay's Injury">
-            <p>Curry is in shock as Klay leaves game with tore ACL.</p>
+            <div class="figure">
+                <img class="figure__img" src="imgs/2019FinalsLoss.png" alt="Curry Shocked After Klay's Injury">
+                <p class="figure__captions">Curry is in shock as Klay leaves game with tore ACL. Image from
+                    <a href="https://ftw.usatoday.com/2019/06/nba-finals-game-6-warriors-raptors-everything-goes-wrong">USA
+                        Today</a>
+                </p>
+            </div>
+            <div class="quote">
+                <img class="quote__bubble quote__bubble--left" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
+                <p class="quote__text quote__text--left">Curry would've never won the previous championships without help.</p>
+            </div>
+            <div class="quote">
+                <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
+                <p class="quote__text quote__text--right">Curry will never win a finals MVP.</p>
+            </div>
             <p>Curry's first time as the only offensive option.</p>
             <h3>Warriors lose to the Toronto Raptors.</h3>
-            <p>“Curry would've never won the previous championships without help.”</p>
-            <p>“Curry will never win a finals MVP.”</p>
             <h3>Durant leaves the Warriors.</h3>
         </section>
-        <section>
-            <p>Curry breaks his hand, will not play for the rest of the season.</p>
-            <h3>Klay tears his achilles.</h3>
-            <h3>Warriors are the worst team in the Western Conference, with 15 wins and 50 losses.</h3>
-            <p>Andrew Wiggins is traded to the Warriors. Fans are not happy.</p>
-            <!-- Might have to take the actual SVG and add it here to use JS for it -->
-            <img src="imgs/AndrewWigginsTable.svg" alt="Wiggins Table Showing His Poor Perfomance">
-            <!-- Pop up with discription here -->
-            <p>More on PIE</p>
-        </section>
-        <section>
-            <h3>Warriors fail to make it to the playoffs.</h3>
-            <p>"Don't wanna see us next year"</p>
+        <div class="background--blue">
+            <section class="container wrapper">
+                <div class="header background--blue">
+                    <h2>2020</h2>
+                </div>
+                <p>Curry breaks his hand, will not play for the rest of the season.</p>
+                <h3>Klay tears his achilles.</h3>
+                <h3>Warriors are the worst team in the Western Conference, with 15 wins and 50 losses.</h3>
+                <p>Andrew Wiggins is traded to the Warriors. Fans are not happy.</p>
+                <div class="figure">
+                    <!-- Might have to take the actual SVG and add it here to use JS for it -->
+                    <img src="imgs/AndrewWigginsTable.svg" alt="Wiggins Table Showing His Poor Perfomance">
+                    <!-- Pop up with discription here -->
+                    <p class="figure__captions">More on PIE</p>
+                </div>
+            </section>
+        </div>
+        <section class="container wrapper">
+            <div class="header">
+                <h2>2021</h2>
+            </div>
             <p>Wiggins becomes an All Star for the first time in his career.</p>
-            <img src="imgs/ImprovedWiggins.svg" alt="Andrew Wiggins Improved Performance Graph">
-            <!-- Pop up with discription here -->
-            <p>More on PIE</p>
-        </section>
-        <section>
-            <div>
-                <h3>Klay returns after not playing for</h3>
-                <h2>941</h2>
-                <h3>days!</h3>
+            <div class="figure">
+                <img src="imgs/ImprovedWiggins.svg" alt="Andrew Wiggins Improved Performance Graph">
+                <!-- Pop up with discription here -->
+                <p class="figure__captions">More on PIE</p>
             </div>
-            <p>Warriors finish the regular season third in the Western Conference.</p>
-            <p>“We will never see the Golden State Warriors in the finals ever again”</p>
-            <div>
-                <p>How many titles will Steph win in the next four years?<br>0!</p>
-            </div>
+            <div class="quote">
+                <img class="quote__bubble quote__bubble--left" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
+                <p class="quote__text quote__text--left">Don't wanna see us next year - Curry</p>
+            </div><br><br><br><br>
+            <h3>Warriors fail to make it to the playoffs.</h3>
         </section>
-        <section>
+        <div class="background--yellow">
+            <section class="container wrapper">
+                <div class="header background--yellow">
+                    <h2>2022</h2>
+                </div>
+                <div>
+                    <h3>Klay returns after not playing for</h3>
+                    <h1 class="no-margin">941</h1>
+                    <h3>days!</h3>
+                </div>
+                <div class="quote">
+                    <img class="quote__bubble quote__bubble--left" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
+                    <p class="quote__text quote__text--left">We will never see the Golden State Warriors in the finals ever again</p>
+                </div>
+                <div class="quote">
+                    <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
+                    <p class="quote__text quote__text--right">How many titles will Steph win in the next four years?<br>0!</p>
+                </div><br><br><br><br>
+                <p>Warriors finish the regular season third in the Western Conference.</p>
+            </section>
+        </div>
+        <section class="container">
             <h1>2022 Playoffs</h1>
-            <div>
+            <div class="wrapper">
                 <h2>Round 1</h2>
                 <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg" alt="Golden State Warriors Logo">
+                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                        alt="Golden State Warriors Logo">
                     <h3>Golden State Warriors</h3>
                     <p>3rd seed in the Western Conference</p>
                     <p>4.9 BPI</p>
@@ -88,13 +123,14 @@
                     <h4>Series</h4>
                     <p>0 - 0</p>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>                    
+                    <p>0 - 0</p>
                 </div>
             </div>
-            <div>
+            <div class="wrapper">
                 <h2>Round 2</h2>
                 <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg" alt="Golden State Warriors Logo">
+                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                        alt="Golden State Warriors Logo">
                     <h3>Golden State Warriors</h3>
                     <p>3rd seed in the Western Conference</p>
                     <p>4.9 BPI</p>
@@ -114,13 +150,14 @@
                     <h4>Series</h4>
                     <p>0 - 0</p>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>                    
+                    <p>0 - 0</p>
                 </div>
             </div>
-            <div>
+            <div class="wrapper">
                 <h2>Western Conference Finals</h2>
                 <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg" alt="Golden State Warriors Logo">
+                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                        alt="Golden State Warriors Logo">
                     <h3>Golden State Warriors</h3>
                     <p>3rd seed in the Western Conference</p>
                     <p>4.9 BPI</p>
@@ -141,13 +178,14 @@
                     <h4>Series</h4>
                     <p>0 - 0</p>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>                    
+                    <p>0 - 0</p>
                 </div>
             </div>
-            <div>
+            <div class="wrapper">
                 <h2>NBA Finals</h2>
                 <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg" alt="Golden State Warriors Logo">
+                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                        alt="Golden State Warriors Logo">
                     <h3>Golden State Warriors</h3>
                     <p>3rd seed in the Western Conference</p>
                     <p>4.9 BPI</p>
@@ -169,7 +207,7 @@
                     <h4>Series</h4>
                     <p>0 - 0</p>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>                    
+                    <p>0 - 0</p>
                 </div>
             </div>
         </section>
