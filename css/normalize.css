@@ -24,6 +24,12 @@ img {
     padding: 50px 50px;
 }
 
-.no-margin {
+.margin--none > * {
     margin: 0;
+    line-height: 2em;
+}
+
+.margin--none {
+    margin: 0;
+    line-height: 2em;
 }

@@ -1,6 +1,10 @@
 @import 'normalize.css';
+@import 'grid.css';
 @import 'type.css';
 @import 'landing-page.css';
 @import 'header.css';
 @import 'colors.css';
 @import 'figures.css';
+@import 'teams.css';
+@import 'footer.css';
+

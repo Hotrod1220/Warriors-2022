@@ -1,0 +1,8 @@
+.footer {
+    background-color: #1D428A;
+    display: flex;
+}
+
+.footer div p {
+    margin: 0;
+}

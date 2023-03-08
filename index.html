@@ -6,9 +6,12 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bree+Serif&family=Roboto+Slab:wght@300;400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -16,6 +19,9 @@
     <section class="landing-page">
         <!-- Background image opacity change changes the text opacity too -->
         <h1>Fall and Rise <br> of the <br>Golden State Warriors</h1>
+        <span class="material-symbols-outlined">
+            keyboard_double_arrow_down
+        </span>
     </section>
     <main>
         <section class="container wrapper text--yellow">
@@ -27,13 +33,15 @@
             <div class="figure">
                 <img class="figure__img" src="imgs/2019FinalsLoss.png" alt="Curry Shocked After Klay's Injury">
                 <p class="figure__captions">Curry is in shock as Klay leaves game with tore ACL. Image from
-                    <a href="https://ftw.usatoday.com/2019/06/nba-finals-game-6-warriors-raptors-everything-goes-wrong">USA
+                    <a href="https://ftw.usatoday.com/2019/06/nba-finals-game-6-warriors-raptors-everything-goes-wrong"
+                        target="_blank">USA
                         Today</a>
                 </p>
             </div>
             <div class="quote">
                 <img class="quote__bubble quote__bubble--left" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
-                <p class="quote__text quote__text--left">Curry would've never won the previous championships without help.</p>
+                <p class="quote__text quote__text--left">Curry would've never won the previous championships without
+                    help.</p>
             </div>
             <div class="quote">
                 <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
@@ -53,7 +61,8 @@
                 <div class="figure">
                     <img class="figure__img" src="imgs/2020Warriors.jpeg" alt="2020 Warriors Roster">
                     <p class="figure__captions">2020 Golden State Warriors Roster. Image from
-                        <a class="a--" href="https://www.nbcsports.com/bayarea/warriors/headband-klay-thompson-returns-warriors-2020-21-team-photo">NBC
+                        <a href="https://www.nbcsports.com/bayarea/warriors/headband-klay-thompson-returns-warriors-2020-21-team-photo"
+                            target="_blank">NBC
                             Sports</a>
                     </p>
                 </div>
@@ -90,16 +99,19 @@
                 </div>
                 <div>
                     <h3>Klay returns after not playing for</h3>
-                    <h1 class="no-margin">941</h1>
+                    <h1 class="large-number">941</h1>
                     <h3>days!</h3>
                 </div>
                 <div class="quote">
                     <img class="quote__bubble quote__bubble--left" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
-                    <p class="quote__text quote__text--left">We will never see the Golden State Warriors in the finals ever again</p>
+                    <p class="quote__text quote__text--left">We will never see the Golden State Warriors in the finals
+                        ever again</p>
                 </div>
                 <div class="quote">
-                    <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
-                    <p class="quote__text quote__text--right">How many titles will Steph win in the next four years?<br>0!</p>
+                    <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-white.svg"
+                        alt="Text Bubble">
+                    <p class="quote__text quote__text--right">How many titles will Steph win in the next four
+                        years?<br>0!</p>
                 </div><br><br><br><br>
                 <p>Warriors finish the regular season third in the Western Conference.</p>
             </section>
@@ -108,124 +120,176 @@
             <h1>2022 Playoffs</h1>
             <div class="wrapper">
                 <h2>Round 1</h2>
-                <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
-                        alt="Golden State Warriors Logo">
-                    <h3>Golden State Warriors</h3>
-                    <p>3rd seed in the Western Conference</p>
-                    <p>4.9 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
-                    <p>Favored to win the series</p>
+                <div class="grid-2">
+                    <div class="teams margin--none">
+                        <img class="team-logos__team1"
+                            src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                            alt="Golden State Warriors Logo">
+                        <h3>Golden State Warriors</h3>
+                        <p>3rd seed in the Western Conference</p>
+                        <p>4.9 BPI</p>
+                        <p>Favored to win the series</p>
+                    </div>
+                    <div class="teams margin--none">
+                        <img class="team-logos__team2" src="imgs/denver-nuggets-logo.svg" alt="Denver Nuggets Logo">
+                        <h3>Denver Nuggets</h3>
+                        <p>6th seed in the Western Conference</p>
+                        <p>2.1 BPI</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="imgs/denver-nuggets-logo.svg" alt="Denver Nuggets Logo">
-                    <h3>Denver Nuggets</h3>
-                    <p>6th seed in the Western Conference</p>
-                    <p>2.1 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
-                </div>
-                <div>
+                <div class="margin--none">
                     <h4>Series</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                 </div>
+                <p class="caption margin--none">What is BPI?</p>
             </div>
             <div class="wrapper">
                 <h2>Round 2</h2>
-                <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
-                        alt="Golden State Warriors Logo">
-                    <h3>Golden State Warriors</h3>
-                    <p>3rd seed in the Western Conference</p>
-                    <p>4.9 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
+                <div class="grid-2">
+                    <div class="teams margin--none">
+                        <img class="team-logos__team1"
+                            src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                            alt="Golden State Warriors Logo">
+                        <h3>Golden State Warriors</h3>
+                        <p>3rd seed in the Western Conference</p>
+                        <p>4.9 BPI</p>
+                    </div>
+                    <div class="teams margin--none">
+                        <img src="imgs/memphis-grizzlies-logo.svg" alt="Memphis Grizzlies Logo">
+                        <h3>Memphis Grizzlies</h3>
+                        <p>2nd seed in the Western Conference</p>
+                        <p>5.2 BPI</p>
+                        <p>Favored to win the series</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="imgs/memphis-grizzlies-logo.svg" alt="Memphis Grizzlies Logo">
-                    <h3>Memphis Grizzlies</h3>
-                    <p>2nd seed in the Western Conference</p>
-                    <p>5.2 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
-                    <p>Favored to win the series</p>
-                </div>
-                <div>
+                <div class="margin--none">
                     <h4>Series</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                 </div>
+                <p class="caption margin--none">What is BPI?</p>
             </div>
             <div class="wrapper">
                 <h2>Western Conference Finals</h2>
-                <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
-                        alt="Golden State Warriors Logo">
-                    <h3>Golden State Warriors</h3>
-                    <p>3rd seed in the Western Conference</p>
-                    <p>4.9 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
+                <div class="grid-2">
+                    <div class="teams margin--none">
+                        <img class="team-logos__team1"
+                            src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                            alt="Golden State Warriors Logo">
+                        <h3>Golden State Warriors</h3>
+                        <p>3rd seed in the Western Conference</p>
+                        <p>4.9 BPI</p>
+                    </div>
+                    <div class="teams margin--none">
+                        <img src="imgs/dallas-mavericks-logo.svg" alt="Dallas Mavericks Logo">
+                        <h3>Dallas Mavericks</h3>
+                        <p>2nd seed in the Western Conference</p>
+                        <p>5.2 BPI</p>
+                        <p>Eliminated the first seed Phoenix Suns</p>
+                        <p>Favored to win the series</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="imgs/dallas-mavericks-logo.svg" alt="Dallas Mavericks Logo">
-                    <h3>Dallas Mavericks</h3>
-                    <p>2nd seed in the Western Conference</p>
-                    <p>5.2 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
-                    <p>Eliminated the first seed Phoenix Suns</p>
-                    <p>Favored to win the series</p>
-                </div>
-                <div>
+                <div class="margin--none">
                     <h4>Series</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                 </div>
+                <p class="caption margin--none">What is BPI?</p>
             </div>
             <div class="wrapper">
                 <h2>NBA Finals</h2>
-                <div>
-                    <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
-                        alt="Golden State Warriors Logo">
-                    <h3>Golden State Warriors</h3>
-                    <p>3rd seed in the Western Conference</p>
-                    <p>4.9 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
-                    <p>14% chance to win the finals based on ESPN</p>
+                <div class="grid-2">
+                    <div class="teams margin--none">
+                        <img src="imgs/golden-state-warriors-logo/golden-state-warriors-logo.svg"
+                            alt="Golden State Warriors Logo">
+                        <h3>Golden State Warriors</h3>
+                        <p>3rd seed in the Western Conference</p>
+                        <p>4.9 BPI</p>
+                        <p>14% chance to win the finals based on ESPN</p>
+                    </div>
+                    <div class="teams margin--none">
+                        <img src="imgs/boston-celtics-logo.svg" alt="Boston Celtics Logo">
+                        <h3>Boston Celtics</h3>
+                        <p>2nd seed in the Eastern Conference</p>
+                        <p>11.3 BPI</p>
+                        <p>86% chance to win the finals based on ESPN</p>
+                        <p>Favored to win the series</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="imgs/boston-celtics-logo.svg" alt="Boston Celtics Logo">
-                    <h3>Boston Celtics</h3>
-                    <p>2nd seed in the Eastern Conference</p>
-                    <p>11.3 BPI</p>
-                    <!-- Pop up with discription here -->
-                    <p>More on BPI</p>
-                    <p>86% chance to win the finals based on ESPN</p>
-                    <p>Favored to win the series</p>
-                </div>
-                <div>
+                <div class="margin--none">
                     <h4>Series</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                     <h4>Game 1</h4>
-                    <p>0 - 0</p>
+                    <div class="grid-3 margin--none">
+                        <div></div>
+                        <h3>0</h3>
+                        <h4>-</h4>
+                        <h3>0</h3>
+                    </div>
                 </div>
+                <p class="caption margin--none">What is BPI?</p>
             </div>
         </section>
-        <section>
+        <section class="container wrapper">
             <h1>Warriors Win the 2022 NBA Championship</h1>
+            <div class="figure">
+                <img class="figure__img" src="imgs/Finals.webp" alt="2020 Warriors Roster">
+                <p class="figure__captions">Image from
+                    <a href="https://www.nbcbayarea.com/news/sports/photos-warriors-win-4th-nba-title-in-8-years/2921872/"
+                        target="_blank">NBC Bay Area</a>
+                </p>
+            </div>
+            <div class="quote">
+                <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
+                <p class="quote__text quote__text--right">What are they gonna say now! - Curry</p>
+            </div><br><br><br><br>
             <h2>Curry earns Finals MVP</h2>
-            <p>"What are they gonna say now!"</p>
         </section>
     </main>
-    <footer>
-        <p>Sources</p>
+    <footer class="footer">
+        <div class="container wrapper">
+            <p>Sources</p>
+            <p>CC</p>
+        </div>
     </footer>
 </body>
 
