@@ -9,7 +9,7 @@ var windowHeight;
 setInterval(switchBackground, 3000);
 
 $(document).on("scroll", showQuote);
-
+table();
 
 
 function switchBackground() {
@@ -26,15 +26,57 @@ function showQuote() {
         quoteYPos = quotePos.bottom;
 
         if (quoteYPos > -100 && quoteYPos < windowHeight) {
-            console.log("Fading in")
             if ($(".quote").css("opacity") == "0")
                 $(".quote").fadeTo(500, 1);
             break;
         }
         if (i == quoteList.length - 1) {
-            console.log("Fading out")
             if ($(".quote").css("opacity") == "1")
                 $(".quote").fadeTo(500, 0);
         }
     }
 }
+
+function table() {
+    $("#Wall").css("visibility", "hidden");
+    $("#WallNum").css("visibility", "hidden");
+    $("#WallBtn").css("cursor", "pointer");
+    $("#WallBtnText").css("cursor", "pointer");
+
+    $("#Irving").css("visibility", "hidden");
+    $("#IrvingText").css("visibility", "hidden");
+    $("#IrvingNum").css("visibility", "hidden");
+    $("#IrvingBtn").css("visibility", "hidden");
+    $("#IrvingBtnText").css("visibility", "hidden");
+
+    $("#Davis").css("visibility", "hidden");
+    $("#DavisText").css("visibility", "hidden");
+    $("#DavisNum").css("visibility", "hidden");
+    $("#DavisBtn").css("visibility", "hidden");
+    $("#DavisBtnText").css("visibility", "hidden");
+
+    $("#Wiggins").css("visibility", "hidden");
+    $("#WigginsText").css("visibility", "hidden");
+    $("#WigginsNum").css("visibility", "hidden");
+    $("#WigginsBtn").css("visibility", "hidden");
+    $("#WigginsBtnText").css("visibility", "hidden");
+
+    $("#Towns").css("visibility", "hidden");
+    $("#TownsText").css("visibility", "hidden");
+    $("#TownsNum").css("visibility", "hidden");
+    $("#TownsBtn").css("visibility", "hidden");
+    $("#TownsBtnText").css("visibility", "hidden");
+
+    $("#WallBtn").on("click", Wall);
+    $("#WallBtnText").on("click", Wall);
+    
+
+}
+
+function Wall() {
+    $("#WallBtn").css("visibility", "hidden");
+    $("#WallBtn").css("cursor", "auto");
+    $("#WallBtnText").css("visibility", "hidden");
+
+    $("#Wall").addClass("tableAnimation");
+};
