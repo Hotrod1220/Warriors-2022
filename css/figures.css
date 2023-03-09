@@ -58,3 +58,7 @@
 .large-number {
     font-size: 150px;
 }
+
+.teams img {
+    min-height: 300px;
+}
