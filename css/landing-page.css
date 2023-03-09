@@ -4,13 +4,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-image: url(/imgs/IMG_0221.GIF); */
-    background-size: cover;
-    background-position: top;
-    /* opacity: 0.1; */
+    position: relative;
+}
+
+.landing-page__img {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 .material-symbols-outlined {
     font-size: 50px;
 }
 
+.landing-page__content {
+    position: relative;
+}

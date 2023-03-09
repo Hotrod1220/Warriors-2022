@@ -51,6 +51,10 @@
     top: 85px
 }
 
+.quote__text--black {
+    color: #26282A;
+}
+
 .large-number {
     font-size: 150px;
 }

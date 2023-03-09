@@ -18,10 +18,13 @@
 <body>
     <section class="landing-page">
         <!-- Background image opacity change changes the text opacity too -->
-        <h1>Fall and Rise <br> of the <br>Golden State Warriors</h1>
-        <span class="material-symbols-outlined">
-            keyboard_double_arrow_down
-        </span>
+        <img class="landing-page__img" src="imgs/IMG_0221.webp" alt="Team Animated Background">
+        <div class="landing-page__content">
+            <h1>Fall and Rise <br> of the <br>Golden State Warriors</h1>
+            <span class="material-symbols-outlined">
+                keyboard_double_arrow_down
+            </span>
+        </div>
     </section>
     <main>
         <section class="container wrapper text--yellow">
@@ -72,9 +75,23 @@
                     <!-- Might have to take the actual SVG and add it here to use JS for it -->
                     <img src="imgs/WigginsTable2.svg" alt="Wiggins Table Showing His Poor Perfomance">
                     <!-- Pop up with discription here -->
-                    <p class="figure__captions">What is PIE?</p>
+                    <p class="figure__captions"><a href="#popup2">What is PIE?</a></p>
                 </div>
             </section>
+            <!-- <div id="popup2" class="overlay">
+                <div class="popup margin--none">
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <h3>Player Impact Estimate (PIE)</h3>
+                        <p>
+                            Player Impact Estimate (PIE) is a metric to gauge a player's all-around contribution to the game. Almost all statistical categories in the box score are involved in the PIE formula. IE answers what % of the events in a game each player contributed.
+                            Max Value: 23.0
+
+                            Average Player: 8.5
+                        </p>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <section class="container wrapper">
             <div class="header">
@@ -103,14 +120,14 @@
                     <h3>days!</h3>
                 </div>
                 <div class="quote">
-                    <img class="quote__bubble quote__bubble--left" src="imgs/speech-bubble-white.svg" alt="Text Bubble">
-                    <p class="quote__text quote__text--left">We will never see the Golden State Warriors in the finals
+                    <img class="quote__bubble quote__bubble--left" src="imgs/speech-bubble-500.svg">
+                    <p class="quote__text quote__text--left quote__text--black">We will never see the Golden State Warriors in the finals
                         ever again</p>
                 </div>
                 <div class="quote">
-                    <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-white.svg"
+                    <img class="quote__bubble quote__bubble--right" src="imgs/speech-bubble-500.svg"
                         alt="Text Bubble">
-                    <p class="quote__text quote__text--right">How many titles will Steph win in the next four
+                    <p class="quote__text quote__text--right quote__text--black">How many titles will Steph win in the next four
                         years?<br>0!</p>
                 </div><br><br><br><br>
                 <p>Warriors finish the regular season third in the Western Conference.</p>
@@ -287,8 +304,39 @@
     </main>
     <footer class="footer">
         <div class="container wrapper">
-            <p>Sources</p>
-            <p>CC</p>
+            <div class="footer__content">
+                <a href="#popup1">
+                    <p>Sources</p>
+                </a>
+                <p>CC</p>
+            </div>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup margin--none">
+                <h3>Sources</h3>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>ESPN BPI from</p>
+                    <a href="https://www.espn.com/nba/bpi/_/view/playoffs/season/2022">ESPN</a>
+                    <p>NBA Player Stats from:</p>
+                    <a href="https://www.basketball-reference.com/">Basketball Reference</a><br>
+                    <a href="https://www.nba.com/stats">NBA</a>
+                    <p>Player Impact Estimate from</p>
+                    <a href="https://www.nbastuffer.com/analytics101/player-impact-estimate-pie/">NBA Stuffer</a>
+                    <p>Playoff Schedule from</p>
+                    <a href="https://basketball.realgm.com/nba/playoffs/team/Golden-State-Warriors/9/schedule">Basketball
+                        Real GM</a><br>
+
+                    <p>Images</p>
+                    <p>Team Logos from</p>
+                    <a href="https://freebiesupply.com/">Freebie Supply</a>
+                    <p>Animated Webps from </p>
+                    <a href="https://rhynehoward.tumblr.com/post/687313876014006272/amp">Tumblr</a>
+                    <a href="https://allhiphop.com/news/steph-curry-to-host-2022-espy-awards/">All Hip Hop</a><br>
+                    <a href="https://www.tumpik.com/tag/klay thompson gif">Tumpik</a>
+                    <a href="https://winno.app/post/yclvaQgYLY">Win No</a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

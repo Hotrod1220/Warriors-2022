@@ -1,8 +1,20 @@
 .footer {
     background-color: #1D428A;
-    display: flex;
 }
 
 .footer div p {
     margin: 0;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content a {
+    text-decoration: none;
+}
+
+.footer__content a:hover {
+    text-decoration: underline;
 }
