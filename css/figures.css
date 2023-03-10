@@ -62,3 +62,19 @@
 .teams img {
     min-height: 300px;
 }
+
+.button-margin {
+    margin-top: 20px;
+}
+
+.button {
+    background: #006BB6;
+    color: #FFC72C;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #1D428A;
+}

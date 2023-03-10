@@ -1,0 +1,22 @@
+/* Code from https://css-tricks.com/animating-number-counters/ */
+@property --num {
+    syntax: "<integer>";
+    initial-value: 941;
+    inherits: false;
+  }
+  
+  #klayReturn {
+    counter-reset: num var(--num);
+  }
+  #klayReturn::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: var(--number);
+    }
+  }

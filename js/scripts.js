@@ -1,5 +1,8 @@
 var landingPageImgs = ["<img class='landing-page__img' src='imgs/IMG_0221.webp' alt='Team Animated Background'>", "<img class='landing-page__img' src='imgs/IMG_0222.webp' alt='Team Animated Background'>", "<img class='landing-page__img' src='imgs/IMG_0223.webp' alt='Team Animated Background'>", "<img class='landing-page__img' src='imgs/IMG_0225.webp' alt='Team Animated Background'>", "<img class='landing-page__img' src='imgs/IMG_0226.webp' alt='Team Animated Background'>"];
 var counter = 2;
+var disCounter = 0;
+var idName;
+var seriesNum;
 var quotePos;
 var quoteYPos
 var quoteList;
@@ -7,20 +10,46 @@ var windowHeight;
 var nextName;
 var pos;
 var posY;
-var goldPoints1 = [123, 126, 118, 121, 102]; 
-var oppPoints1 = [107, 106, 113, 126, 88]; 
-var goldPoints2 = [117, 101, 142, 101, 95, 110]; 
-var oppPoints2 = [116, 106, 112, 98, 134, 96]; 
-var goldPoints3 = [112, 126, 109, 109, 120]; 
-var oppPoints3 = [87, 117, 100, 119, 110]; 
-var goldPoints4 = [108, 107, 100, 107, 104, 103]; 
-var oppPoints4 = [120, 88, 116, 97, 94, 90]; 
+var contentGold;
+var contentOpp;
+var pointsCounter = 0;
+var seriesOver = false;
+var goldPoints1 = [123, 126, 118, 121, 102];
+var oppPoints1 = [107, 106, 113, 126, 88];
+var goldPoints2 = [117, 101, 142, 101, 95, 110];
+var oppPoints2 = [116, 106, 112, 98, 134, 96];
+var goldPoints3 = [112, 126, 109, 109, 120];
+var oppPoints3 = [87, 117, 100, 119, 110];
+var goldPoints4 = [108, 107, 100, 107, 104, 103];
+var oppPoints4 = [120, 88, 116, 97, 94, 90];
+var seriesComplete = [false, false, false, false];
+var scrollDown = "<span class='material-symbols-outlined'>keyboard_double_arrow_down</span>";
 
 setInterval(switchBackground, 3000);
+setInterval(count, 1000);
 
 $(document).on("scroll", showQuote);
 $(document).on("scroll", improvedWiggins);
+$(document).on("scroll", count);
+$(document).on("scroll", stopScroll);
+$(".button").on("click", showScore)
 table();
+$(".popop__link--PIE").on("click", function () {
+    $("#popup--PIE").css("visibility", "visible");
+    $("#popup--PIE").css("opacity", 1);
+})
+$(".close").on("click", function () {
+    $(".overlay").css("visibility", "hidden");
+    $(".overlay").css("opacity", "0");
+});
+$(".popop__link--BPI").on("click", function () {
+    $("#popup--BPI").css("visibility", "visible");
+    $("#popup--BPI").css("opacity", 1);
+})
+$("#popup1__link").on("click", function () {
+    $("#popup1").css("visibility", "visible");
+    $("#popup1").css("opacity", 1);
+})
 
 
 function switchBackground() {
@@ -80,7 +109,7 @@ function table() {
 
     $("#WallBtn").on("click", animate);
     $("#WallBtnText").on("click", animate);
-    
+
     $("#WallBtnText").on("mouseover", function () {
         $("#WallBtn").css("fill", "#26282A");
     });
@@ -111,7 +140,7 @@ function table() {
 
     $("#TownsBtn").on("click", animate);
     $("#TownsBtnText").on("click", animate);
-    
+
     $("#TownsBtnText").on("mouseover", function () {
         $("#TownsBtn").css("fill", "#26282A");
     });
@@ -132,8 +161,7 @@ function table() {
 
 function animate() {
     idName = this.id;
-    console.log(idName);
-    if(idName == "WallBtn" || idName == "WallBtnText") {
+    if (idName == "WallBtn" || idName == "WallBtnText") {
         idName = "Wall"
         nextName = "Irving";
     } else if (idName == "IrvingBtn" || idName == "IrvingBtnText") {
@@ -149,11 +177,11 @@ function animate() {
         idName = "Wiggins"
         nextName = "End";
     }
-    
+
     $("#" + idName + "Btn").css("visibility", "hidden");
     $("#" + idName + "Btn").css("cursor", "auto");
     $("#" + idName + "BtnText").css("visibility", "hidden");
-    
+
     $("#" + idName).css("visibility", "visible");
     $("#" + idName).addClass("tableAnimation");
 
@@ -173,7 +201,7 @@ function improvedWiggins() {
     pos = temp.getBoundingClientRect();
     posY = pos.top;
 
-    if(posY < $(window).height() && posY > 0) {
+    if (posY < $(window).height() && posY > 0) {
         $(".improvedWiggins__text").css("animation-name", "textAni");
         $(".improvedWiggins__text").css("visibility", "visible");
         $(".improvedWiggins__text2").css("animation-name", "textAni");
@@ -181,4 +209,99 @@ function improvedWiggins() {
         $(".arrow").css("animation-name", "arrowAni");
         $(".arrow").css("visibility", "visible");
     }
+}
+
+function count() {
+    let temp = document.getElementById("klayReturn");
+    pos = temp.getBoundingClientRect();
+    posY = pos.top;
+
+    if (posY < $(window).height() && posY > 0) {
+        $("#klayReturn").css("animation", "counter 5s linear");
+    }
+}
+
+$("#round2").css("display", "none");
+$("#round3").css("display", "none");
+$("#round4").css("display", "none");
+$("#champs").css("display", "none");
+$(".footer").css("display", "none");
+
+function stopScroll() {
+    for (let i = 1; i < 5; i++) {
+        let temp = document.getElementById("series" + i);
+        pos = temp.getBoundingClientRect();
+        posY = pos.top;
+
+        if (posY == 0)
+            break;
+
+        if (posY < $(window).height() * 0.95 && !seriesComplete[i - 1]) {
+            $("html, body").css("overflow", "hidden");
+        }
+    }
+}
+
+function showScore() {
+    idName = "#" + this.id;
+    seriesNum = parseInt(idName[idName.length - 1]);
+
+    if (seriesNum == 1) {
+        contentGold = goldPoints1[pointsCounter];
+        contentOpp = oppPoints1[pointsCounter];
+        pointsCounter++;
+        if (pointsCounter == 5) {
+            seriesOver = true;
+        }
+    }
+    else if (seriesNum == 2) {
+        contentGold = goldPoints2[pointsCounter];
+        contentOpp = oppPoints2[pointsCounter];
+        pointsCounter++;
+        if (pointsCounter == 6) {
+            seriesOver = true;
+        }
+    }
+    else if (seriesNum == 3) {
+        contentGold = goldPoints3[pointsCounter];
+        contentOpp = oppPoints3[pointsCounter];
+        pointsCounter++;
+        if (pointsCounter == 5) {
+            seriesOver = true;
+        }
+    }
+    else if (seriesNum == 4) {
+        contentGold = goldPoints3[pointsCounter];
+        contentOpp = oppPoints3[pointsCounter];
+        pointsCounter++;
+        if (pointsCounter == 6) {
+            seriesOver = true;
+        }
+    }
+
+    if (seriesOver) {
+        pointsCounter = 0;
+        $(idName).removeClass("button");
+        $(idName).html(scrollDown);
+        $(idName).unbind("click");
+        seriesComplete[seriesNum - 1] = true;
+        if (seriesNum == 4) {
+            $("#champs").css("display", "block");
+            $(".footer").css("display", "block");
+        } else {
+            console.log("#round" + (seriesNum + 1))
+            $("#round" + (seriesNum + 1)).css("display", "block");
+        }
+        $("html, body").css("overflow", "auto");
+
+        seriesOver = false;
+    }
+
+    $("#gold__points--" + seriesNum).html(contentGold);
+    $("#gold__points--" + seriesNum).css("opacity", "0");
+    $("#gold__points--" + seriesNum).fadeTo(500, 1);
+
+    $("#opp__points--" + seriesNum).html(contentOpp);
+    $("#opp__points--" + seriesNum).css("opacity", "0");
+    $("#opp__points--" + seriesNum).fadeTo(500, 1);
 }

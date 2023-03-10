@@ -38,3 +38,7 @@ svg {
     margin: 0;
     line-height: 2em;
 }
+
+.pointer {
+    cursor: pointer;
+}
