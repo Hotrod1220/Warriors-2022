@@ -62,27 +62,3 @@
 .teams img {
     min-height: 300px;
 }
-
-.wigginsTable {
-    width: 100%;
-}
-
-.btn:hover {
-    fill: #26282A;
-}
-
-.tableAnimation {
-    animation-duration: 3s;
-    animation-name: tableAni;
-    animation-iteration-count: infinite;
-}
-
-@keyframes tableAni {
-    from {
-        transform: scaleY(0);
-    }
-    
-    to {
-        transform: scaleY(1);
-    }
-}

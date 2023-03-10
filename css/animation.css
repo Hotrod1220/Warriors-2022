@@ -1,0 +1,59 @@
+.btn:hover {
+    fill: #26282A;
+}
+
+.tableAnimation {
+    animation-duration: 3s;
+    transform-origin: 100% 83%;
+    animation-name: tableAni;
+    animation-iteration-count: linear;
+}
+
+@keyframes tableAni {
+    from {
+        transform: scaleY(0);
+    }
+    
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.improvedWiggins__text {
+    visibility: hidden;
+    animation-duration: 8s;
+    animation-iteration-count: linear;
+}
+
+.improvedWiggins__text2 {
+    visibility: hidden;
+    animation-duration: 3s;
+    animation-iteration-count: linear;
+}
+
+@keyframes textAni {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.arrow {
+    visibility: hidden;
+    transform-origin: 0% 90%;
+    animation-duration: 6s;
+    animation-iteration-count: linear;
+}
+
+@keyframes arrowAni {
+    from {
+        scale: 0;
+    }
+
+    to {
+        scale: 1;
+    }
+}
