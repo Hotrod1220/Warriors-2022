@@ -244,6 +244,12 @@ function stopScroll() {
 
         if (posY < $(window).height() * 0.95 && !seriesComplete[i - 1]) {
             $("html, body").css("overflow", "hidden");
+            if (i == 1) {
+                $("#smallPopup").css("visibility", "visible");
+                $("#smallPopup").css("opacity", "0");
+                $("#smallPopup").fadeTo(500, 1);     
+                setTimeout(function () {$("#smallPopup").fadeTo(500, 0)}, 5000);
+            }
         }
     }
 }
