@@ -16,6 +16,10 @@
     margin-top: 20px;
 }
 
+.quote--higher {
+    top: -50px;
+}
+
 .quote__bubble {
     top: 0px;
     position: absolute;

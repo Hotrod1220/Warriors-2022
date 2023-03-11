@@ -1,0 +1,176 @@
+@media screen and (max-width: 1300px) {
+    .landing-page__img {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .quote__bubble {
+        max-width: 200px;
+    }
+
+    .quote__text {
+        max-width: 150px;
+        font-size: 14px;
+        top: 65px
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 70px;
+        margin: 100px 0px;
+    }
+
+    h2 {
+        font-size: 60px;
+        margin: 100px 0px;
+    }
+
+    h3 {
+        font-size: 40px;
+        margin: 100px 0px;
+    }
+
+    h4 {
+        font-size: 25px;
+        margin: 100px 0px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .landing-page {
+        min-height: 70vh;
+    }
+
+    .material-symbols-outlined {
+        font-size: 40px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .teams {
+        margin: 30px 0px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin: 70px 0px;
+    }
+
+    h2 {
+        font-size: 45px;
+        margin: 70px 0px;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin: 70px 0px;
+    }
+
+    h4 {
+        font-size: 25px;
+        margin: 70px 0px;
+    }
+
+    .smallerPara {
+        margin-top: 250px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .smallerPara2 {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+
+    .grid-3 {
+        grid-template-columns:  1fr 1fr 1fr ;
+    }
+    
+    .grid-3 h3:nth-child(1) {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .landing-page h1 {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-3 {
+        grid-template-columns:  1fr 3fr 1fr ;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .landing-page {
+        min-height: 50vh;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 50px 0px;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin: 50px 0px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 50px 0px;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin: 50px 0px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 50px 0px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+    .smallerPara {
+        font-size: 16px;
+    }
+
+    .smallerPara2 {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+
+    .quote__bubble {
+        max-width: 150px;
+    }
+
+    .quote__text {
+        max-width: 100px;
+        font-size: 10px;
+        top: 40px
+    }
+
+    .popup .close {
+        top: 10px;
+    }
+
+    .popup, .popup p {
+        margin-top: 0px;
+    }
+}
