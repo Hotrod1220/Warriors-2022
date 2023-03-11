@@ -52,6 +52,10 @@ $("#popup1__link").on("click", function () {
     $("#popup1").css("visibility", "visible");
     $("#popup1").css("opacity", 1);
 })
+$("#popup2__link").on("click", function () {
+    $("#popup2").css("visibility", "visible");
+    $("#popup2").css("opacity", 1);
+})
 
 
 function switchBackground() {
