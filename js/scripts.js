@@ -14,6 +14,8 @@ var contentGold;
 var contentOpp;
 var pointsCounter = 0;
 var seriesOver = false;
+var seriesCounterGold = 0;
+var seriesCounterOpp = 0;
 var goldPoints1 = [123, 126, 118, 121, 102];
 var oppPoints1 = [107, 106, 113, 126, 88];
 var goldPoints2 = [117, 101, 142, 101, 95, 110];
@@ -60,7 +62,7 @@ function switchBackground() {
 
 function showQuote() {
     quoteList = document.getElementsByClassName("quote");
-    windowHeight = $(window).height() * 0.4;
+    windowHeight = $(window).height() * 0.6;
     for (let i = 0; i < quoteList.length; i++) {
         quotePos = quoteList[i].getBoundingClientRect();
         quoteYPos = quotePos.bottom;
@@ -279,6 +281,21 @@ function showScore() {
         }
     }
 
+    $("#gameCount" + seriesNum).html("Game " + pointsCounter);
+    $("#button" + seriesNum).html("Game " + (pointsCounter + 1) + " Result");
+
+    if (contentGold > contentOpp) {
+        seriesCounterGold++;
+        $("#gold__series--" + seriesNum).html(seriesCounterGold);
+        $("#gold__series--" + seriesNum).css("opacity", "0");
+        $("#gold__series--" + seriesNum).fadeTo(500, 1);
+    } else {
+        seriesCounterOpp++;
+        $("#opp__series--" + seriesNum).html(seriesCounterOpp);
+        $("#opp__series--" + seriesNum).css("opacity", "0");
+        $("#opp__series--" + seriesNum).fadeTo(500, 1);
+    }
+
     if (seriesOver) {
         pointsCounter = 0;
         $(idName).removeClass("button");
@@ -288,13 +305,15 @@ function showScore() {
         if (seriesNum == 4) {
             $("#champs").css("display", "block");
             $(".footer").css("display", "block");
+            $("#quoteFinal").addClass("quote");
         } else {
-            console.log("#round" + (seriesNum + 1))
             $("#round" + (seriesNum + 1)).css("display", "block");
         }
-        $("html, body").css("overflow", "auto");
+        $("html, body").css("overflow", "visible");
 
         seriesOver = false;
+        seriesCounterGold = 0;
+        seriesCounterOpp = 0;
     }
 
     $("#gold__points--" + seriesNum).html(contentGold);
